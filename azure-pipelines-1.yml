@@ -30,12 +30,3 @@ steps:
     repository: 'alipulipati123 / devops1'
     command: 'buildAndPush'
     Dockerfile: '**/AzureDockerfile'
-- task: ACRTask@0
-  inputs:
-    azureSubscription: 'Azure subscription 1 (90cade02-a42c-411d-99d0-6cdcde91a13b)'
-    azureContainerRegistry: 'acr551'
-    containerRepository: 'test1'
-    contextType: 'file'
-    contextPath: '$(System.DefaultWorkingDirectory)'
-    dockerfileOrTaskFile: 'AzureDockerfile'
-
