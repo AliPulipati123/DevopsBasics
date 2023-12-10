@@ -35,9 +35,7 @@ steps:
     azureSubscription: 'Azure subscription 1 (90cade02-a42c-411d-99d0-6cdcde91a13b)'
     azureContainerRegistry: 'acr551'
     containerRepository: 'test1'
-    contextType: 'Git'
-    githubConnection: 'GitHub'
-    repositoryName: 'AliPulipati123/AliDveOpsBasics'
-    branch: 'master'
+    contextType: 'file'
+    contextPath: '$(System.DefaultWorkingDirectory)'
     dockerfileOrTaskFile: 'AzureDockerfile'
 
